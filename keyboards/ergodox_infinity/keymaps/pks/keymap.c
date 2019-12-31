@@ -24,7 +24,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * | LShift |Z/Ctrl|   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  | /    | RShift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |  L1  |  `   |   ~  | Alt | Ctrl |                                       |   {   |  }   |   [  |   ]  |  L1   |
+ *   |  L1  |  `   |  ALT | CTL  | RGUI |                                       |   {   |  }   |   [  |   ]  |  L1   |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
  *                                        | LGUI | PRSC |       | Up  Esc  |
@@ -42,14 +42,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,         KC_Q,         KC_W,   KC_E,   KC_R,   KC_T,   KC_VOLU,
         KC_ESC,        KC_A,         KC_S,   KC_D,   KC_F,   KC_G,
         KC_LSFT,        CTL_T(KC_Z),  KC_X,   KC_C,   KC_V,   KC_B,   KC_VOLD,
-        MO(SYMB),KC_GRV,  KC_BSLS,  KC_RALT,KC_RCTL,
+        MO(SYMB),KC_GRV,  KC_BSLS,  KC_RGUI,KC_RCTL,
         KC_LGUI,  KC_PSCR,
                                                              KC_HOME,
                                                KC_SPC,KC_ENT,KC_END,
         // right hand
              KC_RGHT,     KC_6,   KC_7,  KC_8,   KC_9,   KC_0,             KC_MINS,
              TG(SYMB),    KC_Y,   KC_U,  KC_I,   KC_O,   KC_P,             KC_BSPC,
-                          KC_H,   KC_J,  KC_K,   KC_L,   LT(MDIA, KC_SCLN), KC_QUOT,
+                          KC_H,   KC_J,  KC_K,   KC_L,   KC_SCLN, KC_QUOT,
              MEH_T(KC_NO),KC_N,   KC_M,  KC_COMM,KC_DOT, CTL_T(KC_SLSH),   KC_RSFT,
         KC_LCBR, KC_RCBR,KC_LBRC,KC_RBRC,          MO(SYMB),
              KC_LALT,KC_ESC,
